@@ -11,21 +11,20 @@
         text-align: center;
         min-height: 100vh;
         margin: 20vh;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
         .content {
       flex: 1; 
-      margin-bottom: 30px;
+      margin-bottom: auto;
     }
 
     #logo {
-      display: block;
+      display: flex;
       margin: 0 auto;
-      max-width: 50%;
+      max-width: 20%;
       height: auto;
       margin-top: 30px;
     }
-    
     .image-links {
       display: flex;
       flex-direction: column;
@@ -33,31 +32,26 @@
       flex-wrap: wrap;
       margin-top: -100px;
     }
-
     .image-link {
-      margin-top: 10px;
+      margin-top: 50px;
     }
-
     .image-link img {
       max-width: 60%;
       height: auto;
     }
-
     .image-link a {
       text-decoration: none;
       color: inherit;
       transition: transform 0.3s;
       display: inline-block;
     }
-
     .image-link a:hover {
       transform: scale(1.1)
     }
     #footer-image {
-        max-width: 25%;
+        max-width: 30%;
         height: auto;
-        margin-top: 15;
-
+        margin-top: 30px;
     }
   </style>
 </head>
@@ -96,30 +90,18 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
-
-    
-    .content {
-      text-align: center;
-      padding: 50px;
-      color: #ffffff;
-      font-size: 24px;
-    }
-
     @media (max-width: 768px) {
       .content {
         font-size: 18px;
       }
-      
-
     }
   </style>
 </head>
 <style>
   body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
   }
-
   .rocket {
     position: fixed;
     animation-name: float;
@@ -127,19 +109,16 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-
   .rocket.top-left {
     top: 70px;
     left: 35px;
     animation-delay: 0s;
   }
-
   .rocket.bottom-right {
     bottom: 20px;
     right: 10px;
     animation-delay: 2s;
   }
-
   @keyframes float {
     0% {
       transform: translateY(0);
@@ -156,8 +135,3 @@
 <body>
   <img class="rocket top-left" src="FOGUETE 1.png" alt="Foguete 1" width="63" height="">
   <img class="rocket bottom-right" src="FOGUETE 2.png" alt="Foguete 2" width="73" height="125">
-</div>
-</body>
-  </style>
-</head>
-<body>
