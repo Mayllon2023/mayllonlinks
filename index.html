@@ -15,7 +15,7 @@
     }
         .content {
       flex: 1; /* Ocupa todo o espaço disponível verticalmente */
-      margin-bottom: 0 auto; /* Margem inferior para o espaço do rodapé */
+      margin-bottom: 50 auto; /* Margem inferior para o espaço do rodapé */
     }
 
     #logo {
@@ -103,6 +103,11 @@
 
     /* Estilos adicionais para dispositivos móveis */
     @media (max-width: 768px) {
+      .content {
+        font-size: 18px;
+      }
+
+      @media (max-width: 414px) {
       .content {
         font-size: 18px;
       }
