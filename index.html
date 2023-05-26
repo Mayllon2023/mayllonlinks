@@ -11,20 +11,21 @@
         text-align: center;
         min-height: 100vh;
         margin: 20vh;
-        padding-bottom: 0 auto;
+        padding-top: 0%;
     }
         .content {
       flex: 1; /* Ocupa todo o espaço disponível verticalmente */
-      margin-bottom: -20%; /* Margem inferior para o espaço do rodapé */
+      margin-bottom: 80%; /* Margem inferior para o espaço do rodapé */
     }
 
     #logo {
-      display: block;
+      display:block;
       margin: 5%;
       max-width: 30%;
-      height: 0 auto;
-      margin-top: 10%
-    
+      margin-bottom: -100%;
+      margin-top: 10%;
+      position: absolute;
+
   
     }
     
@@ -33,7 +34,7 @@
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
-      margin-top: -25%;
+      margin-top: 25%;
     }
 
     .image-link {
@@ -58,8 +59,9 @@
   
     #footer-image {
         max-width: 25%;
-        margin-bottom: 10%;
-        margin-top: 10%;
+        margin-bottom: -5%;
+        right: 40%;
+        top: 100%;
 
     }
   </style>
@@ -123,7 +125,7 @@
   }
 
   .rocket {
-    position: fixed;
+    position: absolute;
     animation-name: float;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -131,13 +133,13 @@
   }
 
   .rocket.top-left {
-    top: 10%;
-    left: 15%;
+    top: 22%;
+    left: 3%;
     animation-delay: 0s;
   }
 
   .rocket.bottom-right {
-    bottom: 5%;
+    top: 70%;
     right: 5%;
     animation-delay: 2s;
   }
