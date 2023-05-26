@@ -11,11 +11,11 @@
         text-align: center;
         min-height: 100vh;
         margin: 20vh;
-        padding-bottom: 0%;
+        padding-bottom: 0 auto;
     }
         .content {
       flex: 1; /* Ocupa todo o espaço disponível verticalmente */
-      margin-bottom: 50 auto; /* Margem inferior para o espaço do rodapé */
+      margin-bottom: -20%; /* Margem inferior para o espaço do rodapé */
     }
 
     #logo {
@@ -23,7 +23,7 @@
       margin: 5%;
       max-width: 30%;
       height: 0 auto;
-      margin-top: 0 auto
+      margin-top: 10%
     
   
     }
@@ -33,7 +33,7 @@
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
-      margin-top: -13%;
+      margin-top: -25%;
     }
 
     .image-link {
@@ -58,8 +58,8 @@
   
     #footer-image {
         max-width: 25%;
-        height: 0 auto;
-        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-top: 10%;
 
     }
   </style>
@@ -123,7 +123,7 @@
   }
 
   .rocket {
-    position: absolute;
+    position: fixed;
     animation-name: float;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -131,14 +131,14 @@
   }
 
   .rocket.top-left {
-    top: 25%;
-    left: 0%;
+    top: 10%;
+    left: 15%;
     animation-delay: 0s;
   }
 
   .rocket.bottom-right {
-    bottom: 15%;
-    right: 8%;
+    bottom: 5%;
+    right: 5%;
     animation-delay: 2s;
   }
 
@@ -163,4 +163,3 @@
   </style>
 </head>
 <body>
-  <div class="content">
